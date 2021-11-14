@@ -4,7 +4,137 @@
 @import 'global';
 
 
+.header{
+  padding: 51px 0 54px;
+  color: #436372;
+  @extend %rubik-500;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
+.logo {
+  width: 154px;
+  height: 39px;
+  position: relative;
+  &-img{
+    display: inline-block;
+    margin-right: 12px;
+  }
+}
+
+ .logo span{
+    font-size: 36px;
+    line-height: 36px;
+    position: absolute;
+    top: 4px;
+    color: #436372;
+ }
+
+.menu__list{
+  display: flex;
+  &-item + .menu__list-item{
+    margin-left: 24px;
+  }
+  &-link{
+    position: relative;
+    font-size: 15px;
+    line-height: 12px;
+    color: #436372;
+    padding: 0 10px;
+    &-active::after{
+      content: "+";
+      position: absolute;
+      right: 0;
+      font-size: 15px;
+      line-height: 12px;
+      color: #436372;
+      transform: translateY(30%);
+    }
+  }
+}
+
+.user-nav{
+  display: flex;
+  &__inner{
+  border-radius: 25px;
+  background-color: rgb(252, 215, 182);
+  width: 178px;
+  height: 51px;
+  margin-right: 19px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  }
+
+  &__link-search{
+    width: 51px;
+    height: 52px;
+    margin-right: 21px;
+    border-radius: 50%;
+    background-color: #edf1f4;
+    position: relative;
+    &-img{
+      position: absolute;
+      top: 19px;
+      left: 17px;
+    } 
+  }
+
+  &__link-menu{
+    width: 51px;
+    height: 52px;
+    background-color: #a3bbc8;
+    border-radius: 50%;
+    position: relative;
+    &-img{
+      position: absolute;
+      top: 16px;
+      left: 16px;
+    }
+  }
+
+  &__link-like{
+    position: relative;
+    & span {
+      @extend %dmsans-400;
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      font-size: 10px;
+      line-height: 16px;
+      color: #243f4d;
+      text-align: center;
+      position: absolute;
+      top: -8px;
+      right: -8px;
+    }
+  }
+
+  &__link-cart{
+    position: relative;
+    & span {
+      @extend %dmsans-400;
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      font-size: 10px;
+      line-height: 16px;
+      color: #243f4d;
+      text-align: center;
+      position: absolute;
+      top: -8px;
+      right: -8px;
+    }
+  }
+}
 
 
 
