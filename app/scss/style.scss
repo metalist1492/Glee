@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
@@ -13,6 +14,9 @@
     justify-content: space-between;
     align-items: center;
   }
+}
+.menu{
+  padding-left: 70px;
 }
 .menu__list{
   display: flex;
@@ -118,18 +122,133 @@
 }
 
 
+.top-slider{
+  padding: 225px 0 280px;
+  background-color: #fcd7b6;
+  max-width: 1770px;
+  margin: 0 auto;
+  position: relative;
+  &::before{
+    content: "";
+    width: 622px;
+    height: 634px;
+    background-color: rgba(67,99,114,0.0);
+    background-image: linear-gradient(-90.0deg, #ffffff 0%, rgba(255,255,255,0.0) 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 180px;
+    transform: translateY(-50%);
+  }
+  &__inner{
+    
+  }
+  &__container{
+    max-width: 1170px;
+    margin: 0 auto;
+  } 
+  &__item{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__title{
+    max-width: 412px;
+    font-size: 72px;
+    line-height: 70px;
+    color: #243f4d;
+    margin-bottom: 30px;
+    @extend %rubik-500;
+  }
+  &__text{
+    max-width: 362px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #436372;
+    margin-bottom: 30px;
+    @extend %rubik-400;
+  }
+  &__link{
+    width: 200px;
+    padding: 20px 40px 20px 30px;
+    font-size: 15px;
+    line-height: 12px;
+    color: #ffffff;
+    background-color: #a3bbc8;
+    @extend %rubik-500;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      background-image: url("../images/arrow-btn.png");
+      width: 22px;
+      height: 9px;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+  }
+}
+  
+.slick-dots{
+  display: flex;
+  position: absolute;
+  bottom: -210px;
+  left: 50%;
+  transform: translateX(-50%);
+  & li{
+    padding: 0 5px;
+  }
+  & button{
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 11px;
+    line-height: 8px;
+    color: #243f4d;
+    background-color: #ffffff;
+    opacity: .3;
+    cursor: pointer;
+    @extend %rubik-500;
+  }
+}
+.slick-active{
+  & button{
+    opacity: 1;
+  }
+}
 
 
+
+
+
+
+
+
+
+.box{width: 622px;
+height: 634px;
+background-color: rgba(67,99,114,0.0);
+background-image: linear-gradient(-90.0deg, #ffffff 0%, rgba(255,255,255,0.0) 100%);
+border-radius: 50%;}
 
 .footer-top{
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   padding: 100px 0;
   border-bottom: 1px solid rgba($color: #a3bbc8, $alpha: .4);
   &__logo{
     display: block;
     margin-bottom: 25px;
+  }
+  &__contact{
+    margin-right: 110px;
+  }
+  &__services{
+    margin-right: 180px;
+  }
+  &__account{
+    margin-right: 210px;
   }
   &__adress{
     display: block;
