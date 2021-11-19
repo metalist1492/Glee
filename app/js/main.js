@@ -6,6 +6,13 @@ $(function () {
     autoplay: true,
   });
 
+  $('[data-fancybox]').fancybox({
+    
+  });
 
+  $('.products__item').hover(
+    function () { $(this).addClass('products__item--active') },   
+    function () { $(this).removeClass('products__item--active') } 
+  );
 
 });

@@ -22,6 +22,9 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
-    "browser-sync": "^2.27.7"
+    "@fancyapps/fancybox": "^3.5.7",
+    "browser-sync": "^2.27.7",
+    "install": "^0.13.0",
+    "npm": "^8.1.4"
   }
 }

@@ -1,33 +1,41 @@
 html,
-body{
+body {
   height: 100%;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
 }
 
-.container{
+.container {
   max-width: 1800px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.footer-container{
+.container__2 {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.main{
+.main {
   flex-grow: 1;
 }
 
-a{
+a {
   display: block;
   font-size: 14px;
   line-height: 32px;
   color: #7b7b7b;
   @extend %rubik-400;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.2;
+  color: #191919;
+  text-align: center;
+  @extend %dmsans-700;
 }
