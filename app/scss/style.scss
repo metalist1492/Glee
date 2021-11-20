@@ -367,7 +367,7 @@
   top: 170px;
   left: 0;
   right: 0;
-  transform: translateY(-2000px);
+  opacity: 0;
   transition: all .5s;
 
   &__search,
@@ -388,10 +388,8 @@
 }
 
 .products__item--active .link-box {
-  transform: translateY(0);
+  opacity: 1;
 }
-
-
 
 .link-box__search,
 .link-box__cart,
@@ -399,18 +397,15 @@
   fill: #a3bbc8;
 }
 
-.link-box__search:hover,
-.link-box__cart:hover,
-.link-box__like:hover {
+.link-box--active {
   background-color: #a3bbc8;
-  
+  fill: #fff;
 }
 
-.link-box__search svg:hover,
-.link-box__cart svg:hover,
-.link-box__like svg:hover {
-  fill: #ffffff;
+.link-box--active svg {
+  fill: #fff;
 }
+
 
 /*-------------Video-------------*/
 .video {
