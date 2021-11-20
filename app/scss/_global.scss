@@ -29,7 +29,7 @@ a {
   font-size: 14px;
   line-height: 32px;
   color: #7b7b7b;
-  @extend %rubik-400;
+  @extend %rubik-500;
 }
 
 .title {
@@ -38,4 +38,8 @@ a {
   color: #191919;
   text-align: center;
   @extend %dmsans-700;
+}
+
+.mixitup-control-active {
+  color: #1a1a1a;
 }
