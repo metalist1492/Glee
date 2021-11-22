@@ -599,6 +599,123 @@
   max-width: 1920px;
 }
 
+/*-------------Blog-------------*/
+.blog {
+  padding-top: 100px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  &__top-title {
+    color: #1a1a1a;
+    line-height: 1;
+  }
+
+  &__top-link {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #262626;
+    padding-right: 25px;
+    position: relative;
+    @extend %dmsans-700;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 7px;
+      height: 12px;
+      background-image: url('../images/blog/arrow-link.png');
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 370px;
+    width: 100%;
+  }
+
+  &__item-img__box {
+    width: 370px;
+    height: 250px;
+    border-radius: 5px 5px 0px 0px;
+    position: relative;
+    object-fit: cover;
+  }
+
+  &__item-info__box {
+    padding: 35px 28px 10px;
+    min-height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+  }
+
+  &__item-link {
+    width: 103px;
+    color: #fff;
+    background-color: #a3bbc8;
+    border-radius: 15px;
+    position: absolute;
+    padding: 0 30px;
+    bottom: -15px;
+    left: 27px;
+  }
+
+  &__item-info__title {
+    max-width: 315px;
+
+
+    & a {
+      width: 286px;
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 500;
+      color: #262626;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__item-info__inner {
+    display: flex;
+    padding: 10px 0;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  &__item-info__data,
+  &__item-info__name {
+    font-size: 12px;
+    line-height: 30px;
+    color: #222933;
+    text-transform: uppercase;
+    @extend %rubik-400;
+    margin-right: 30px;
+
+  }
+}
+
+.partners {
+  padding: 260px 0 90px;
+  background-color: $default-color_bg;
+  margin-top: -170px;
+}
+
+.partners__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 /*-------------Footer-------------*/
 .footer-top {

@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
 }
 
-.container__2 {
+.container__small {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -40,3 +40,16 @@ a {
   @extend %dmsans-700;
 }
 
+
+.View_All {
+  font-size: 16px;
+  font-family: "DMSans";
+  color: rgb(38, 38, 38);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  left: 1458.937px;
+  top: 4279.9px;
+  z-index: 66;
+}
