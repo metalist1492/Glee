@@ -5,6 +5,7 @@
 @import 'global';
 
 /*-------------Header-------------*/
+
 .header {
   padding: 51px 0 54px;
   color: #436372;
@@ -17,9 +18,10 @@
   }
 }
 
-.logo{
+.logo {
   margin-right: 174px;
-} 
+}
+
 .menu__list {
   display: flex;
 
@@ -34,15 +36,6 @@
     color: #436372;
     padding: 0 10px;
 
-    &-active::after {
-      content: "+";
-      position: absolute;
-      right: 0;
-      font-size: 15px;
-      line-height: 12px;
-      color: #436372;
-      transform: translateX(50%);
-    }
   }
 }
 
@@ -144,6 +137,7 @@
 }
 
 /*-------------Top-Slider-------------*/
+
 .top-slider {
   padding: 225px 0 280px;
   background-color: #fcd7b6;
@@ -249,6 +243,7 @@
 }
 
 /*-------------Features-------------*/
+
 .features__inner {
   background-color: $default-color_bg;
   display: flex;
@@ -416,6 +411,7 @@
 }
 
 /*-------------Features-2-------------*/
+
 .features-2 {
   padding-top: 100px;
 
@@ -586,6 +582,7 @@
 
 
 /*-------------Video-------------*/
+
 .video {
   background-image: url("../images/video/video-bg.jpg");
   background-size: cover;
@@ -599,6 +596,7 @@
 }
 
 /*-------------Blog-------------*/
+
 .blog {
   padding-top: 100px;
 
@@ -704,10 +702,17 @@
   }
 }
 
+/*-------------Partners-------------*/
+
 .partners {
   padding: 260px 0 90px;
   background-color: $default-color_bg;
   margin-top: -170px;
+}
+
+.partners--login {
+  padding: 83px 0;
+  margin-top: 0;
 }
 
 .partners__inner {
@@ -717,8 +722,10 @@
 }
 
 /*-------------Footer-------------*/
+
 .footer-top {
   display: flex;
+  // justify-content: space-between;
   padding: 100px 0;
   border-bottom: 1px solid rgba($color: #a3bbc8, $alpha: .4);
 
@@ -727,16 +734,23 @@
     margin-bottom: 25px;
   }
 
+  &__items {
+    // max-width: 270px;
+  }
+
   &__contact {
-    margin-right: 110px;
+    width: 200px;
+    margin-right: 100px;
   }
 
   &__services {
-    margin-right: 180px;
+    width: 200px;
+    margin-right: 100px;
   }
 
   &__account {
-    margin-right: 210px;
+    width: 200px;
+    margin-right: 100px;
   }
 
   &__adress {
@@ -751,6 +765,11 @@
   &__tel,
   &__mail {
     line-height: 32px;
+  }
+
+  &__link {
+    line-height: 14px;
+    margin-bottom: 20px;
   }
 
   &__title {
@@ -840,6 +859,84 @@
 
   &__link {
     line-height: 17px;
+  }
+}
+
+
+
+.modal {
+  max-width: 475px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 120px 0;
+}
+
+.modal-form {
+
+  &__label {
+    display: block;
+    font-size: 14px;
+    color: #436372;
+    margin-bottom: 30px;
+    @extend %rubik-500;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    padding: 0 10px;
+    height: 60px;
+    margin-top: 10px;
+  }
+
+  &__btn {
+    height: 60px;
+    background-color: #a3bbc8;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    color: #fffefe;
+    cursor: pointer;
+    @extend %rubik-500;
+  }
+
+  &__box {
+    .modal-form__label {
+      margin-bottom: 0;
+    }
+
+    .modal-form__password {
+      line-height: 14px;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #f6f6f6;
+    margin-bottom: 30px;
+
+  }
+
+  &__descr {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: #436372;
+    margin-bottom: 20px;
+    @extend %rubik-500;
+  }
+
+  &__create {
+    border: 2px solid #a3bbc8;
+    width: 100%;
+    background-color: #fff;
+    font-size: 18px;
+    color: #243f4d;
+    padding: 15px 0;
+    text-align: center;
+    @extend %rubik-500;
   }
 }
 
