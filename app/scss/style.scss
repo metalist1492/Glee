@@ -698,7 +698,25 @@
     text-transform: uppercase;
     @extend %rubik-400;
     margin-right: 30px;
+    padding-left: 18px;
+    position: relative;
 
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &__item-info__data::before {
+    background-image: url('../images/icon/calendar.png');
+  }
+
+  &__item-info__name::before {
+    background-image: url('../images/icon/user.png');
   }
 }
 
@@ -1105,7 +1123,8 @@
   }
 
   &__descr {
-    max-width: 300px;
+    max-width: 305px;
+    width: 100%;
   }
 
   &__title {
@@ -1199,7 +1218,7 @@
     border-radius: 50%;
     position: relative;
 
-    & img{
+    & img {
       position: absolute;
       left: 55%;
       top: 50%;
@@ -1208,7 +1227,42 @@
   }
 }
 
+.terms {
+  padding-top: 120px;
 
+  &__title {
+    font-size: 24px;
+    line-height: 40px;
+    color: #243f4d;
+    margin-bottom: 20px;
+    @extend %rubik-500;
+  }
+
+  & ol {
+    padding-left: 30px;
+    margin-bottom: 60px;
+    list-style-type: decimal-leading-zero;
+  }
+
+  // &__list {
+  //   padding-left: 30px;
+  //   margin-bottom: 60px;
+  //   list-style-type: decimal-leading-zero;
+  // }
+
+  &__item,
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+    margin-bottom: 20px;
+    @extend %rubik-400;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+  }
+}
 
 
 
