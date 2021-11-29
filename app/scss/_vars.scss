@@ -47,3 +47,11 @@ $default-color_bg: #fef7f0;
   font-family: 'Poppins-Bold';
   font-weight: 700;
 }
+
+%checkbox-hiden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}

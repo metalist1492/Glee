@@ -342,6 +342,8 @@
   flex-direction: column;
   justify-content: end;
   position: relative;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  padding-bottom: 25px;
 }
 
 .products__item img {
@@ -640,6 +642,7 @@
   &__item {
     max-width: 370px;
     width: 100%;
+
   }
 
   &__item-img__box {
@@ -904,6 +907,38 @@
     margin-top: 10px;
   }
 
+  &__label-remember {
+    display: block;
+    font-size: 14px;
+    color: #436372;
+    padding-left: 24px;
+    @extend %rubik-500;
+    position: relative;
+  }
+
+  &__input-remember {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+
+    &:checked+.modal-form__checkbox {
+      background-image: url('../images/icon/checkbox.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__checkbox {
+    width: 14px;
+    height: 14px;
+    background-color: #ebebeb;
+    position: absolute;
+    left: 0;
+    top: 1px;
+  }
+
   &__btn {
     height: 60px;
     background-color: #a3bbc8;
@@ -916,14 +951,6 @@
   }
 
   &__box {
-    .modal-form__label {
-      margin-bottom: 0;
-    }
-
-    .modal-form__password {
-      line-height: 14px;
-    }
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -931,6 +958,13 @@
     border-bottom: 1px solid #f6f6f6;
     margin-bottom: 30px;
 
+    .modal-form__label {
+      margin-bottom: 0;
+    }
+
+    .modal-form__password {
+      line-height: 14px;
+    }
   }
 
   &__descr {
@@ -1264,12 +1298,159 @@
   }
 }
 
+//Product-grid
+
+.shop {
+  padding: 120px 0;
+}
+
+.shop__inner {
+  display: flex;
+}
+
+.filter {
+  width: 270px;
+  margin-right: 30px;
+
+  &-title {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #243f4d;
+    padding-right: 55px;
+    @extend %dmsans-700;
+    position: relative;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 39px;
+      height: 3px;
+      background-color: #a3bbc8;
+      border-radius: 1px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.filter-category,
+.filter-brand,
+.filter-price {
+  margin-bottom: 50px;
+
+  &__input {
+    @extend %checkbox-hiden;
+
+    &:checked+.filter-category__checkbox {
+      background-color: #edf1f4;
+    }
+
+    &:checked+.filter-brand__checkbox {
+      background-color: #edf1f4;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    line-height: 16px;
+    color: #243f4d;
+    padding: 15px 25px 15px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    @extend %rubik-400;
+  }
+}
+
+.filter-price__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 43px;
+  color: #243f4d;
+  @extend %rubik-400;
+}
+
+.filter-recent__item {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.filter-recent__img-box {
+  width: 71px;
+  height: 71px;
+  border: 2px solid #f2f2f2;
+  background-color: rgba(255, 255, 255, 0.96);
+  margin-right: 20px;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.filter-recent__link {
+  font-size: 14px;
+  line-height: 15px;
+  color: #333333;
+  @extend %rubik-400;
+}
+
+.filter-recent__price {
+  font-size: 15px;
+  line-height: 27px;
+  color: #333333;
+  @extend %rubik-400;
+}
 
 
+.irs--flat .irs-line {
+  top: 5px;
+  height: 3px;
+  background-color: #a3bbc8;
+  border-radius: 1px;
+  opacity: .65;
+}
+
+.irs--flat .irs-bar {
+  top: 5px;
+  height: 4px;
+  background-color: #a3bbc8;
+  border-radius: .4px;
+}
+
+.irs--flat .irs-handle>i:first-child {
+  width: 15px;
+  height: 15px;
+  background-color: #a3bbc8;
+  top: -22px;
+  left: 2px;
+  cursor: pointer;
+}
 
 
+.irs--flat .irs-handle.state_hover>i:first-child,
+.irs--flat .irs-handle:hover>i:first-child {
+  background-color: #6590a7;
+}
 
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+  display: none;
+}
 
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  display: none;
+}
 
 
 

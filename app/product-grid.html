@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -20,12 +20,12 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a class="menu__list-link menu__list-link-active" href="index.html">
+              <a class="menu__list-link menu__list-link-active" href="#">
                 Home +
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="about.html">
+              <a class="menu__list-link" href="#">
                 About
               </a>
             </li>
@@ -77,7 +77,7 @@
     <section class="top">
       <div class="container">
         <h2 class="top__title">
-          Log in
+          Product list 1
         </h2>
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
@@ -88,38 +88,178 @@
             </li>
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="#">
-                Log in
+                Product list 1
               </a>
             </li>
           </ul>
         </div>
       </div>
     </section>
-    <section class="modal">
-      <div class="container">
-        <form class="modal-form">
-          <label class="modal-form__label">
-            Username or email address *
-            <input class="modal-form__input" type="text">
-          </label>
-          <label class="modal-form__label">
-            Password *
-            <input class="modal-form__input" type="password">
-          </label>
-          <button class="modal-form__btn">Login</button>
-          <div class="modal-form__box">
-            <label class="modal-form__label-remember">
-              <input class="modal-form__input-remember" type="checkbox">
-              <span class="modal-form__checkbox"></span>
-              Remember me
-            </label>
-            <a class="modal-form__password" href="#">Lost your password?</a>
+    <section class="shop">
+      <div class="container__small">
+        <div class="shop__inner">
+          <div class="shop-filters filter">
+            <div class="filter-item filter-category">
+              <h3 class="filter-title">
+                CATEGORY
+              </h3>
+              <form class="filter-category__form">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox" checked>
+                  <div class="filter-category__checkbox">
+                    <span>Chair</span>
+                    <span><img src="images/icon/arrow.svg" alt="arrow"></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Table</span>
+                    <span><img src="images/icon/arrow.svg" alt="arrow"></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Lamp</span>
+                    <span><img src="images/icon/arrow.svg" alt="arrow"></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Watch</span>
+                    <span><img src="images/icon/arrow.svg" alt="arrow"></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Clock</span>
+                    <span><img src="images/icon/arrow.svg" alt="arrow"></span>
+                  </div>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter-item filter-price">
+              <h3 class="filter-title">
+                PRICE
+              </h3>
+              <form class="filter-price__form" action="#">
+                <input class="filter-price__input" type="text" data-min="0" data-max="999" data-from="100"
+                  data-to="500">
+                <label class="filter-price__label">
+                  <span class="filter-price__inner">
+                    <span>
+                      $<span class="filter-price__from"></span>
+                    </span>
+                    <span>
+                      $<span class="filter-price__to"></span>
+                    </span>
+                  </span>
+              </form>
+            </div>
+
+
+
+
+
+
+
+            <div class="filter-item filter-brand">
+              <h3 class="filter-title">
+                BRAND
+              </h3>
+              <form class="filter-brand__form">
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox" checked>
+                  <div class="filter-brand__checkbox">
+                    <span>RFL</span>
+                    <span>(10)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Brothers</span>
+                    <span>(21)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Regal</span>
+                    <span>(3)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Nadia</span>
+                    <span>(14)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Otobi</span>
+                    <span>(6)</span>
+                  </div>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter-item filter-recent">
+              <h3 class="filter-title">
+                RECENT PRODUCTS
+              </h3>
+              <div class="filter-recent__item">
+                <div class="filter-recent__img-box">
+                  <img class="filter-recent__img" src="images/recent/1.jpg" alt="images">
+                </div>
+                <div class="filter-recent__content-box">
+                  <a class="filter-recent__link" href="#">Pendant lamp</a>
+                  <div class="filter-recent__star"></div>
+                  <p class="filter-recent__price">23$</p>
+                </div>
+              </div>
+              <div class="filter-recent__item">
+                <div class="filter-recent__img-box">
+                  <img class="filter-recent__img" src="images/recent/2.jpg" alt="images">
+                </div>
+                <div class="filter-recent__content-box">
+                  <a class="filter-recent__link" href="#">Pendant lamp</a>
+                  <div class="filter-recent__star"></div>
+                  <p class="filter-recent__price">23$</p>
+                </div>
+              </div>
+              <div class="filter-recent__item">
+                <div class="filter-recent__img-box">
+                  <img class="filter-recent__img" src="images/recent/3.jpg" alt="images">
+                </div>
+                <div class="filter-recent__content-box">
+                  <a class="filter-recent__link" href="#">Pendant lamp</a>
+                  <div class="filter-recent__star"></div>
+                  <p class="filter-recent__price">23$</p>
+                </div>
+              </div>
+
+            </div>
+
           </div>
-          <p class="modal-form__descr">Not registered? No problem</p>
-          <a class="modal-form__create" href="#">Create an account</a>
-        </form>
+          <div class="shop-content">
+
+          </div>
+        </div>
       </div>
     </section>
+
+
+
+
+
+
     <div class="partners partners--login">
       <div class="container__small">
         <div class="partners__inner">
@@ -131,7 +271,6 @@
         </div>
       </div>
     </div>
-
   </main>
 
   <footer class="footer">
