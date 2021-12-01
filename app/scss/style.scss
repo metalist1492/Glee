@@ -412,6 +412,108 @@
   fill: #fff;
 }
 
+//Product-line
+
+.productsline__item {
+  display: flex;
+  margin-bottom: 40px;
+  overflow: hidden;
+
+  &-imgbox {
+    max-width: 370px;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.96);
+    border: 2px solid #f2f2f2;
+    margin-right: 30px;
+
+    img {
+      object-fit: cover;
+
+    }
+  }
+
+  &-contentbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.productline__name-link {
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+  margin-bottom: 25px;
+  @extend %rubik-400;
+}
+
+.productline__price {
+  margin: 40px 0;
+  font-size: 30px;
+  line-height: 30px;
+  color: #333333;
+  @extend %rubik-400;
+}
+
+.productline__text {
+  font-size: 16px;
+  line-height: 30px;
+  color: #243f4d;
+  margin-bottom: 40px;
+  max-width: 450px;
+  @extend %rubik-400;
+}
+
+.productline__link-box {
+  display: flex;
+  position: relative;
+
+}
+
+.link-box__like-line,
+.link-box__cart-line {
+  border-radius: 0%;
+  margin: 0 5px;
+
+  & svg {
+    transform: translate(50%, 50%);
+  }
+}
+
+
+.productline-link {
+  width: 208px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #a3bbc8;
+  border-radius: 5px;
+  font-size: 15px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(-300%);
+  transition: all .3s;
+  @extend %rubik-400;
+}
+
+.productline__link-box-inner:hover {
+  .productline-link {
+    transform: translateX(0%);
+  }
+}
+
+.productline__link-box--active {
+  display: none;
+}
+
 /*-------------Features-2-------------*/
 
 .features-2 {
@@ -1396,6 +1498,12 @@
   }
 }
 
+.filter-recent__content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .filter-recent__link {
   font-size: 14px;
   line-height: 15px;
@@ -1403,9 +1511,13 @@
   @extend %rubik-400;
 }
 
+.jq-ry-container {
+  padding: 0 0;
+}
+
 .filter-recent__price {
   font-size: 15px;
-  line-height: 27px;
+  line-height: 15px;
   color: #333333;
   @extend %rubik-400;
 }
@@ -1452,6 +1564,11 @@
   display: none;
 }
 
+.shop-content__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px 30px;
 
+}
 
 @import 'media';

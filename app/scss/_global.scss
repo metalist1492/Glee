@@ -85,3 +85,42 @@ a {
   @extend %rubik-400;
 
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 100px 0 0;
+
+  &__prev,
+  &__next {
+    border: 1px solid #a3bbc8;
+    color: #243f4d;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 15px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item+.pagination__item {
+    margin-left: 15px;
+  }
+
+  &__link {
+    border: 1px solid #a3bbc8;
+    color: #243f4d;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  &__link--active {
+    color: #fff;
+    background-color: #a3bbc8;
+  }
+}
