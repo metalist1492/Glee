@@ -1582,6 +1582,9 @@
 
   &__content {
     // width: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @extend %rubik-400;
   }
 
@@ -1605,8 +1608,10 @@
     margin-bottom: 35px;
   }
 
-  &__form {}
-
+  &__form{
+    margin-bottom: 50px;
+  } 
+  
   &__btn {
     width: 208px;
     text-align: center;
@@ -1620,6 +1625,18 @@
     border: none;
     cursor: pointer;
     @extend %rubik-400;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__item-title,
+  &__item-text {
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+    margin-right: 5px;
   }
 }
 
@@ -1646,7 +1663,7 @@
 
     img {
       width: 138px;
-      height: 160px;
+      height: 155px;
       object-fit: contain;
     }
   }
@@ -1658,17 +1675,15 @@
 
     img {
       width: 390px;
-      height: 530px;
+      height: 525px;
       object-fit: contain;
     }
   }
 }
 
-.product-one__num {}
-
 .jq-number.product-one__num {
   position: relative;
-  margin-right: 25px;
+  margin-right: 15px;
 }
 
 .jq-number__field input {
@@ -1677,7 +1692,7 @@
   border: 1px solid #6590a7;
   width: 150px;
   height: 50px;
-  
+
 }
 
 .jq-number__spin.minus {
@@ -1691,12 +1706,12 @@
 
   &::before {
     content: "";
-    width: 15px;
-    height: 3px;
+    width: 10px;
+    height: 1px;
     background-color: black;
     position: absolute;
     top: 50%;
-    left: 15px;
+    left: 18px;
   }
 }
 
@@ -1711,22 +1726,22 @@
 
   &::before {
     content: "";
-    width: 16px;
-    height: 3px;
+    width: 10px;
+    height: 1px;
     background-color: black;
     position: absolute;
     top: 50%;
-    right: 15px;
+    right: 18px;
   }
 
   &::after {
     content: "";
-    width: 3px;
-    height: 16px;
+    width: 1px;
+    height: 10px;
     background-color: #000;
     position: absolute;
-    top: 17px;
-    right: 21px;
+    top: 19px;
+    right: 22px;
   }
 }
 
