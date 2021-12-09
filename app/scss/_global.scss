@@ -72,7 +72,12 @@ a {
     content: "/";
     position: absolute;
     right: -13px;
-    top: 3px;
+    top: 0px;
+    opacity: 0.6;
+    font-size: 14px;
+    line-height: 24px;
+    color: #222933;
+    @extend %rubik-400;
   }
 
   &:last-child {
@@ -127,5 +132,22 @@ a {
   &__link--active {
     color: #fff;
     background-color: #a3bbc8;
+  }
+}
+
+.blog{
+  padding: 100px 0 120px;
+
+  &__inner{
+    display: flex;
+  }
+
+  &__content{
+    max-width: 830px;
+    margin-right: 70px;
+  }
+
+  &__filter{
+    width: 270px;
   }
 }
