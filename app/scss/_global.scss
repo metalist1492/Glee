@@ -134,20 +134,3 @@ a {
     background-color: #a3bbc8;
   }
 }
-
-.blog{
-  padding: 100px 0 120px;
-
-  &__inner{
-    display: flex;
-  }
-
-  &__content{
-    max-width: 830px;
-    margin-right: 70px;
-  }
-
-  &__filter{
-    width: 270px;
-  }
-}

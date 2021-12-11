@@ -55,3 +55,26 @@ $default-color_bg: #fef7f0;
   clip: rect(0 0 0 0);
   position: absolute;
 }
+
+%link {
+  font-size: 15px;
+  line-height: 12px;
+  color: #436372;
+  width: 180px;
+  padding: 20px 40px 20px 20px;
+  border: 1px solid rgba(67, 99, 114, .4);
+  border-radius: 5px;
+  position: relative;
+  @extend %rubik-500;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    background-image: url("../images/features-2/arrow.png");
+    width: 22px;
+    height: 9px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+}

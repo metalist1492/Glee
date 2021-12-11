@@ -566,26 +566,7 @@
   }
 
   &__link {
-    font-size: 15px;
-    line-height: 12px;
-    color: #436372;
-    width: 180px;
-    padding: 20px 40px 20px 20px;
-    border: 1px solid rgba(67, 99, 114, .4);
-    border-radius: 5px;
-    position: relative;
-    @extend %rubik-500;
-
-    &::before {
-      content: " ";
-      position: absolute;
-      background-image: url("../images/features-2/arrow.png");
-      width: 22px;
-      height: 9px;
-      top: 50%;
-      right: 20px;
-      transform: translateY(-50%);
-    }
+    @extend %link;
   }
 }
 
@@ -811,17 +792,19 @@
       position: absolute;
       left: 0;
       top: 6px;
-      width: 14px;
-      height: 14px;
     }
   }
 
   &__item-info__data::before {
-    background-image: url('../images/icon/calendar.png');
+    background-image: url('../images/icon/calendar-alt-regular.svg');
+    width: 14px;
+    height: 16px;
   }
 
   &__item-info__name::before {
-    background-image: url('../images/icon/user.png');
+    background-image: url('../images/icon/user-regular.svg');
+    width: 12px;
+    height: 14px;
   }
 }
 
@@ -1832,5 +1815,199 @@
 
   .slick-next {
     right: 0;
+  }
+}
+
+.blogpage {
+  padding: 100px 0 120px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__content {
+    max-width: 830px;
+    margin-right: 70px;
+
+    .pagination {
+      justify-content: flex-start;
+
+      &__prev {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__content-item {
+    margin-bottom: 50px;
+  }
+
+  &__content-item__imgbox {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  &__content-item__info {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #a3bbc8;
+    width: 275px;
+    padding: 21px 0;
+  }
+
+  &__content-item__data {
+    margin-right: 25px;
+  }
+
+  &__content-item__data,
+  &__content-item__userlink {
+    font-size: 12px;
+    line-height: 30px;
+    color: #ffffff;
+
+    padding-left: 20px;
+    @extend %rubik-400;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 6px;
+    }
+  }
+
+  &__content-item__data::before {
+    background-image: url('../images/icon/calendar-alt-regular-white.svg');
+    width: 16px;
+    height: 16px;
+
+  }
+
+  &__content-item__userlink::before {
+    background-image: url('../images/icon/user-regular-white.svg');
+    width: 12px;
+    height: 14px;
+  }
+
+  &__content-item__title {
+    line-height: 26px;
+    color: #333333;
+    text-align: left;
+    margin-bottom: 35px;
+
+  }
+
+  &__content-link {
+    color: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    @extend %rubik-400;
+  }
+
+  &__content-item__text {
+    margin-bottom: 40px;
+  }
+
+  &__content-item__link {
+    @extend %link;
+    color: #a3bbc8;
+    border: 1px solid #a3bbc8;
+    border-radius: 0;
+    padding: 23px 40px 23px 20px;
+
+    &::before {
+      background-image: url("../images/blogpage/1.png");
+    }
+  }
+
+  &__filter {
+    width: 270px;
+  }
+
+  &__filter-search {
+    margin-bottom: 50px;
+  }
+
+  &__filter-search__form {
+    display: flex;
+    align-items: center;
+  }
+
+  &__filter-search__input {
+    height: 43px;
+    border: 1px solid rgba($color: #a3bbc8, $alpha: .4);
+    border-right: none;
+    border-radius: 5px;
+    display: block;
+    padding: 0 10px;
+  }
+
+  &__filter-btn {
+    width: 48px;
+    height: 43px;
+    background-color: #edf1f4;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      background-image: url('../images/blogpage/search.svg');
+    }
+  }
+
+  &__filter-recent__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  &__filter-recent__imgbox {
+    width: 71px;
+    height: 71px;
+    margin-right: 20px;
+  }
+
+  &__filter-recent__img {
+    min-width: 71px;
+  }
+
+  &__filter-recent__link {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    // margin-bottom: 5px;
+    @extend %rubik-400;
+  }
+
+  &__filter__content-item__data {
+    font-size: 12px;
+    line-height: 30px;
+    color: #9a9a9a;
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 16px;
+      left: 0;
+      top: 6px;
+      background-image: url('../images/icon/calendar-alt-regular-grey.svg');
+    }
   }
 }
