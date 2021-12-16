@@ -12,17 +12,17 @@
   }
 
   &__contact {
-    width: 200px;
+    max-width: 200px;
     margin-right: 100px;
   }
 
   &__services {
-    width: 200px;
+    max-width: 200px;
     margin-right: 100px;
   }
 
   &__account {
-    width: 200px;
+    max-width: 200px;
     margin-right: 100px;
   }
 
@@ -132,5 +132,35 @@
 
   &__link {
     line-height: 17px;
+  }
+}
+
+@media (max-width: 925px) {
+  .footer-top{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer-top__items {
+    max-width: 270px;
+    width: 100%;
+    margin-right: 10px;
+    margin: 0 auto;
+  }
+  .footer-top__item-form{
+    max-width: 270px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+
+
+
+  .footer-bottom__copy {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .footer-bottom__item a {
+    font-size: 10px;
   }
 }
