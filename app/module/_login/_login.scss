@@ -1,0 +1,106 @@
+.modal {
+  max-width: 475px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 120px 0;
+}
+
+.modal-form {
+
+  &__label {
+    display: block;
+    font-size: 14px;
+    color: #436372;
+    margin-bottom: 30px;
+    @extend %rubik-500;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    padding: 0 10px;
+    height: 60px;
+    margin-top: 10px;
+  }
+
+  &__label-remember {
+    display: block;
+    font-size: 14px;
+    color: #436372;
+    padding-left: 24px;
+    @extend %rubik-500;
+    position: relative;
+  }
+
+  &__input-remember {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+
+    &:checked+.modal-form__checkbox {
+      background-image: url('../images/icon/checkbox.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__checkbox {
+    width: 14px;
+    height: 14px;
+    background-color: #ebebeb;
+    position: absolute;
+    left: 0;
+    top: 1px;
+  }
+
+  &__btn {
+    height: 60px;
+    background-color: #a3bbc8;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    color: #fffefe;
+    cursor: pointer;
+    @extend %rubik-500;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #f6f6f6;
+    margin-bottom: 30px;
+
+    .modal-form__label {
+      margin-bottom: 0;
+    }
+
+    .modal-form__password {
+      line-height: 14px;
+    }
+  }
+
+  &__descr {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: #436372;
+    margin-bottom: 20px;
+    @extend %rubik-500;
+  }
+
+  &__create {
+    border: 2px solid #a3bbc8;
+    width: 100%;
+    background-color: #fff;
+    font-size: 18px;
+    color: #243f4d;
+    padding: 15px 0;
+    text-align: center;
+    @extend %rubik-500;
+  }
+}

@@ -1,0 +1,94 @@
+/*-------------Design-------------*/
+
+.design {
+  padding: 100px 0;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
+  &__filter-link {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #8b8b8b;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    @extend %dmsans-700;
+
+    &:hover {
+      color: #1a1a1a;
+    }
+  }
+
+  &__filter-link+.design__filter-link {
+    margin-left: 30px;
+  }
+}
+
+.design__filter .mixitup-control-active {
+  color: #1a1a1a;
+}
+
+.design__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  min-height: 525px;
+}
+
+.design__item {
+  width: 370px;
+  height: 246px;
+  padding: 35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: relative;
+}
+
+.design__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  border: 2px solid #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 12px;
+  color: #fff;
+  background-color: rgba($color: #436372, $alpha: .25);
+  transition: all .5s;
+  @extend %rubik-500;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.design__name {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  @extend %dmsans-700;
+}
+
+.design__descr {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #a3bbc8;
+  @extend %dmsans-700;
+}
+

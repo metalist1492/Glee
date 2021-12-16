@@ -1,0 +1,55 @@
+/*-------------Features-2-------------*/
+
+.features-2 {
+  padding-top: 100px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    background-color: $accent-color_bg;
+    padding: 100px;
+    max-width: 870px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+  }
+
+  &__img {
+    position: absolute;
+    left: 120px;
+    bottom: 90px;
+
+  }
+
+  &__info {
+    max-width: 335px;
+
+  }
+
+  &__title {
+    font-size: 26px;
+    line-height: 32px;
+    color: #243f4d;
+    margin-bottom: 15px;
+    @extend %dmsans-700;
+  }
+
+  &__descr {
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+    margin-bottom: 15px;
+    @extend %rubik-400;
+  }
+
+  &__link {
+    @extend %link;
+  }
+}

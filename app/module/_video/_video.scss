@@ -1,0 +1,13 @@
+/*-------------Video-------------*/
+
+.video {
+  background-image: url("../images/video/video-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1920px;
+}
