@@ -15,7 +15,29 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
+@media (max-width: 1150px) {
+  .partners{
+    margin-top: 50px;
+    padding: 70px 0;
+    img{
+      margin: 10px;
+    }
+  }
+}
+
+@media (max-width: 440px){
+  .partners{
+    img{
+      margin: 10px auto;
+    }
+    
+  }
+  .partners__inner{
+    display: block;
+  }
+}
 
 

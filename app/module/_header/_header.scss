@@ -185,12 +185,13 @@
     left: 0;
     flex-direction: column;
     transform: translateY(-200%);
-    transition: all .3s;
-    z-index: 99;
+    transition: all 1s;
+    z-index: 9;
+    background-color: #fff;
   }
   .menu__list--active{
     transform: translateY(0%);
-    transition: all .3s;
+    transition: all 1s;
   }
   .menu__list-item{
     
@@ -241,4 +242,11 @@
   .menu__list{
     top: 180px;
   }
+}
+
+@media (max-width: 440px) {
+  .user-nav__link-menu-img{
+    left: 15px;
+  }
+  
 }

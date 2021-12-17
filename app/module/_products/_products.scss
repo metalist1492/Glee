@@ -48,7 +48,7 @@
   width: 270px;
   height: 380px;
   text-align: center;
-  display: flex !important;
+  display: flex;
   flex-direction: column;
   justify-content: end;
   position: relative;
@@ -120,4 +120,36 @@
 
 .link-box--active svg {
   fill: #fff;
+}
+
+@media (max-width: 1200px) {
+  .products__items { 
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 885px){
+  .products__items { 
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 585px){
+  .products__items { 
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 440px){
+  .products__title{
+    font-size: 25px;
+  }
+  .products__filter-link+.products__filter-link{
+    margin-left: 10px;
+  }
+  .products__filter-link {
+    font-size: 15px;
+  }
 }

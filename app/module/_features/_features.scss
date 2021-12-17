@@ -15,7 +15,7 @@
 
   &-inner {
     padding-left: 75px;
-    width: 300px;
+    max-width: 300px;
     position: relative;
   }
 
@@ -42,4 +42,31 @@
 
 .features__item+.features__item {
   border-left: 1px solid #e9e5e0;
+}
+
+@media (max-width: 1075px) {
+  .features__inner{
+    display: block;
+  }
+  .features__item{
+    width: 100%;
+    padding: 15px;
+  }
+  .features__item-inner{
+    max-width: 385px;
+    width: 100%;
+  }
+  .features__item+.features__item {
+    border-left: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .features__item-title {
+    font-size: 16px;
+  }
+  .features__item-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
