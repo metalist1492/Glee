@@ -147,6 +147,12 @@
   .blog__item-info__box{
     padding: 30px 15px;
   }
+  .blog__item-info__title {
+    max-width: none;
+    a{
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width:768px) {
@@ -178,6 +184,7 @@
 @media (max-width: 352px) {
   .blog__item-info__title{
     a{
+      width: 100%;
       font-size: 13px;
     }
   }
